@@ -1,15 +1,24 @@
 # Util
 
-**TODO: Add description**
+Utilities that are useful across a range of elixir applications.
+
+For example, do a quick benchmark to test the speed of a function:
+
+```elixir
+$ iex
+
+iex 1>func = fn -> 1 + 1 end
+iex 2>Util.time(func, 10_000) # Execute `func` 10_000 times
+1.32 # => Average time taken in Microseconds
+```
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `util` to your list of dependencies in `mix.exs`:
+Installation is pretty simple:
 
 ```elixir
 def deps do
-  [{:util, "~> 0.1.0"}]
+  [{:util, "~> 0.1.0", only: :dev}]
 end
 ```
 

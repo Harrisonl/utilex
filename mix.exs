@@ -32,7 +32,9 @@ defmodule Util.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
   end
 
   defp description() do
@@ -45,7 +47,7 @@ defmodule Util.Mixfile do
     # These are the default files included in the package
     [
       name: :utilex,
-      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*"],
       maintainers: ["Harrison Lucas"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/harrisonl/utilex"}

@@ -1,4 +1,4 @@
-# Util
+# Utilex
 
 Utilities that are useful across a range of elixir applications.
 

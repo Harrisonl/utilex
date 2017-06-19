@@ -1,4 +1,4 @@
-defmodule Util do
+defmodule Utilex do
 
   @doc """
   Records the time taken to execute the passed in function.
